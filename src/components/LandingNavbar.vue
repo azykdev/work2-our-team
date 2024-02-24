@@ -3,8 +3,8 @@
     <div class="px-5 max-w-screen-lg mx-auto d-flex align-center justify-between h-[64px]">
       <!-- Logo -->
       <div id="logo" class="d-flex align-center">
-        <img src="@/assets/logo.png" alt="logo" width="30px">
-        <span class="ml-2 text-primary-50 font-bold">Our Team</span>
+        <img src="@/assets/logo/svg/logo-no-background.svg" alt="logo" width="150px">
+        <!-- <span class="ml-2 text-primary-50 font-bold">Our Team</span> -->
       </div>
 
       <!-- Navigation -->
