@@ -1,13 +1,13 @@
 <template>
+  <!-- HEADER START-->
   <header class="bg-transparent relative">
-
     <div class=" max-w-screen-lg mx-auto h-full flex items-center px-5 ">
       <!-- Header content -->
       <div class=" d-md-flex flex-row-reverse justify-space-around align-center p-3">
         <!-- Image -->
         <div class="d-flex justify-space-around align-center md:w-1/2">
-          <img style="box-shadow: 0 0 200px rgba(145, 42, 255, 0.7);" src="@/assets/images/about.jpg" alt=" logo"
-            class="rounded-circle w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-96  lg:h-96 object-cover translate-y-[-16%] md:translate-y-0">
+          <img style="box-shadow: 0 0 200px rgba(145, 42, 255, 0.5);" src="@/assets/images/about.jpg" alt=" logo"
+            class="rounded-circle w-48 h-48 sm:w-56 sm:h-56 md:w-80 md:h-80 lg:w-96  lg:h-96 object-cover translate-y-[-16%] md:translate-y-0">
         </div>
 
         <!-- Title -->
@@ -33,12 +33,26 @@
     <!-- Vanta -->
     <!-- <v-vanta ref="vanta" vantaId="vanta-bg" effect="net" :options="options"></v-vanta> -->
   </header>
+  <!-- HEADER END -->
+
+  <!-- SERVICES START -->
+  <section id="services" class="bg-slate-950  ">
+    <div class="max-w-screen-lg mx-auto px-5">
+      <v-row class=" sm:translate-y-[-10%] md:translate-y-[-20%] lg:translate-y-[-30%]">
+        <v-col v-for="service in services" :key="service.title" cols="12" sm="6" md="4">
+          <landing-card1 :title="service.title" :description="service.description" :icon="service.icon" />
+        </v-col>
+      </v-row>
+    </div>
+  </section>
+  <!-- SERVICES END -->
 </template>
 
 <script>
 import VVanta from 'vue-vanta-revamp';
+import LandingCard1 from '@/components/cards/LandingCard1.vue';
 export default {
-  components: { VVanta },
+  components: { VVanta, LandingCard1 },
   name: "HomeView",
   computed: {
     darkMode() {
@@ -62,6 +76,38 @@ export default {
         maxDistance: 16.00,
         spacing: 20.00
       },
+      services: [
+        {
+          title: 'Bepul onlayn xizmatlar 1',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          icon: '💻'
+        },
+        {
+          title: 'Bepul onlayn xizmatlar 2',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          icon: '📱'
+        },
+        {
+          title: 'Bepul onlayn xizmatlar 3',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          icon: '📚'
+        },
+        {
+          title: 'Bepul onlayn xizmatlar 1',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          icon: '💻'
+        },
+        {
+          title: 'Bepul onlayn xizmatlar 2',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          icon: '📱'
+        },
+        {
+          title: 'Bepul onlayn xizmatlar 3',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.',
+          icon: '📚'
+        },
+      ]
     }
   },
 

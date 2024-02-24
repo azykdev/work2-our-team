@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-transparent">
+  <nav class="bg-slate-950">
     <div class="px-5 max-w-screen-lg mx-auto d-flex align-center justify-between h-[64px]">
       <!-- Logo -->
       <div id="logo" class="d-flex align-center">
@@ -11,6 +11,9 @@
       <div id="menu" class="d-flex align-center">
         <!-- Navigation Links -->
         <ul id="nav-links" class="d-none d-lg-flex align-center">
+          <!-- <li>
+            <a href="#services">aaa</a>
+          </li> -->
           <li v-for="link in menuLinks" :key="link.title">
             <RouterLink class="text-primary-50" :to="link.to">{{ link.title }}</RouterLink>
           </li>
@@ -109,11 +112,11 @@ export default {
         to: "/",
       },
       {
-        title: "Loyihalar",
-        to: "/",
+        title: "Xizmatlar",
+        to: "#services",
       },
       {
-        title: "Xizmatlar",
+        title: "Loyihalar",
         to: "/",
       },
       {
@@ -132,7 +135,8 @@ export default {
         title: 'Bog\'lanish',
         to: "/",
       }
-    ]
+    ],
+
   }),
   methods: {
     // toggleTheme() {
@@ -160,7 +164,7 @@ export default {
 nav {
   min-height: 64px;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
