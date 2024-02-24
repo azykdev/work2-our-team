@@ -31,12 +31,12 @@
     <!-- Background -->
     <div class="absolute top-0 left-0 w-full h-full bg-slate-950 -z-10"></div>
     <!-- Vanta -->
-    <!-- <v-vanta ref="vanta" vantaId="vanta-bg" effect="net" :options="options"></v-vanta> -->
+    <v-vanta ref="vanta" vantaId="vanta-bg" effect="net" :options="options"></v-vanta>
   </header>
   <!-- HEADER END -->
 
   <!-- SERVICES START -->
-  <section id="services" class="bg-slate-950  ">
+  <section id="services" class="bg-slate-950  pb-5">
     <div class="max-w-screen-lg mx-auto px-5">
       <v-row class=" sm:translate-y-[-10%] md:translate-y-[-20%] lg:translate-y-[-30%]">
         <v-col v-for="service in services" :key="service.title" cols="12" sm="6" md="4">
