@@ -1,26 +1,37 @@
 <template>
-  <header class="bg-primary-950" @click="vantaBg">
-    <div class="max-w-screen-xl mx-auto h-full flex items-center px-5">
-      <div class="flex items-center justify-around ">
-        <!-- Left content -->
-        <div class="w-full md:w-1/2">
-          <h1 class="text-center text-md-left font-bold text-slate-50 text-4xl md:text-5xl xl:text-6xl leading-tight">
+  <header class="bg-transparent relative">
+
+    <div class=" max-w-screen-lg mx-auto h-full flex items-center px-5 ">
+      <!-- Header content -->
+      <div class=" d-md-flex flex-row-reverse justify-space-around align-center p-3">
+        <!-- Image -->
+        <div class="d-flex justify-space-around align-center md:w-1/2">
+          <img style="box-shadow: 0 0 200px rgba(145, 42, 255, 0.7);" src="@/assets/images/about.jpg" alt=" logo"
+            class="rounded-circle w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-96  lg:h-96 object-cover translate-y-[-16%] md:translate-y-0">
+        </div>
+
+        <!-- Title -->
+        <div class="md:w-1/2 text-center text-md-left">
+          <h1 class="font-bold text-slate-50 text-4xl md:text-5xl lg:text-6xl leading-tight">
             <span id="header-it-word">IT</span>
             mukammalligi <br> bilan dunyoyingizni yangilang.
           </h1>
-          <p class="text-slate-300 mt-5 leading-relaxed text-center text-md-left">Bizga ish kelib chiqadigan ba'zi ozod
+          <p class="text-slate-500 text-lg sm:w-[80%] md:w-full mx-auto mt-5">Bizga ish kelib chiqadigan ba'zi ozod
             odamlarning zavqini
-            tanlash, uni qabul qilish farqiga ergashish qulaymi? Nima bo'lishidan qat'iy nazar</p>
+            tanlash, uni qabul qilish farqiga ergashish qulaymi?</p>
+
+          <button id="head-btn1" class="mt-5 px-5 py-2 rounded-full text-slate-200 font-semibold">Batafsil</button>
+          <button id="head-btn2" class="mt-5 ml-5 px-5 py-2 rounded-full text-slate-900 bg-slate-200 font-semibold">
+            <span class="mdi mdi-play"></span> Video</button>
         </div>
 
-        <!-- Right content -->
-        <div class="w-1/2 items-center justify-center d-none d-md-flex">
-          <img style="box-shadow: 0 0 160px rgba(115, 115, 115, 0.5);" src="@/assets/images/about.jpg" alt="logo"
-            class="rounded-circle opacity-80 d-none d-md-block w-80 lg:w-96 h-80 lg:h-96 object-cover">
-        </div>
       </div>
+
     </div>
-    <v-vanta ref="vanta" vantaId="vanta-bg" effect="net" :options="options"></v-vanta>
+    <!-- Background -->
+    <div class="absolute top-0 left-0 w-full h-full bg-slate-950 -z-10"></div>
+    <!-- Vanta -->
+    <!-- <v-vanta ref="vanta" vantaId="vanta-bg" effect="net" :options="options"></v-vanta> -->
   </header>
 </template>
 
@@ -37,7 +48,6 @@ export default {
   data() {
     return {
       // net effect
-
       options: {
         mouseControls: true,
         touchControls: true,
@@ -52,23 +62,6 @@ export default {
         maxDistance: 16.00,
         spacing: 20.00
       },
-
-      // rings effect
-
-      // options: {
-      //   mouseControls: true,
-      //   touchControls: true,
-      //   gyroControls: false,
-      //   minHeight: 200.00,
-      //   minWidth: 200.00,
-      //   scale: 1.00,
-      //   scaleMobile: 1.00,
-      //   color: 0x5d90d6,
-      //   backgroundColor: 0x9091f,
-      //   points: 20.00,
-      //   maxDistance: 16.00,
-      //   spacing: 20.00
-      // },
     }
   },
 
@@ -80,7 +73,6 @@ header {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  z-index: -10;
 }
 
 #vanta-bg {
@@ -94,8 +86,26 @@ header {
 }
 
 #header-it-word {
-  background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  background: -webkit-linear-gradient(120deg, #932be9 30%, #41d1ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 40px #932be9;
+}
+
+#head-btn1 {
+  background: linear-gradient(120deg, #932be9 30%, #41d1ff);
+  transition: all 0.3s ease;
+}
+
+#head-btn1:hover {
+  box-shadow: 0 0 20px #932be9;
+}
+
+#head-btn2 {
+  transition: all .3s ease;
+}
+
+#head-btn2:hover {
+  box-shadow: 0 0 20px #fff;
 }
 </style>

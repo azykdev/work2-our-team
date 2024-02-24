@@ -1,16 +1,16 @@
 <template>
-  <nav class="bg-primary-950">
-    <div class="px-5 max-w-screen-xl mx-auto d-flex align-center justify-between h-[64px]">
+  <nav class="bg-transparent">
+    <div class="px-5 max-w-screen-lg mx-auto d-flex align-center justify-between h-[64px]">
       <!-- Logo -->
       <div id="logo" class="d-flex align-center">
         <img src="@/assets/logo.png" alt="logo" width="30px">
         <span class="ml-2 text-primary-50 font-bold">Our Team</span>
       </div>
 
-      <!-- Menu -->
+      <!-- Navigation -->
       <div id="menu" class="d-flex align-center">
-        <!-- Menu Links -->
-        <ul id="menu-links" class="d-none d-lg-flex align-center">
+        <!-- Navigation Links -->
+        <ul id="nav-links" class="d-none d-lg-flex align-center">
           <li v-for="link in menuLinks" :key="link.title">
             <RouterLink class="text-primary-50" :to="link.to">{{ link.title }}</RouterLink>
           </li>
@@ -53,12 +53,13 @@
           <v-btn color="grey-darken-1" icon="mdi mdi-email" variant="text" density="comfortable" title="Email"></v-btn>
         </div>
 
-        <v-divider :thickness="2" vertical class="mx-4"></v-divider>
+        <v-divider :thickness="2" vertical class="mx-4 d-lg-none"></v-divider>
 
         <!-- Menu btn in mobile -->
         <v-menu>
           <template v-slot:activator="{ props }">
-            <v-btn color="primary" v-bind="props" icon="mdi-menu" variant="text" density="comfortable"></v-btn>
+            <v-btn class="d-lg-none" color="primary" v-bind="props" icon="mdi-menu" variant="text"
+              density="comfortable"></v-btn>
           </template>
           <v-list class="bg-grey-darken-4 px-2">
             <v-list-item v-for="(item, index) in menuLinks" :key="index" :value="index">
@@ -166,21 +167,21 @@ nav {
   margin: auto;
 }
 
-#menu-links {
+#nav-links {
   list-style: none;
 }
 
-#menu-links li {
+#nav-links li {
   margin-left: 20px;
 }
 
-#menu-links li a {
+#nav-links li a {
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 14px;
 }
 
-#menu-links li a:hover {
+#nav-links li a:hover {
   color: #7a39fc;
 }
 </style>

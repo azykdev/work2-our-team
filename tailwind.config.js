@@ -31,8 +31,15 @@ module.exports = {
           800: "#1e293b",
           900: "#0f172a",
           950: "#020617",
-        }
+        },
       },
+    },
+    screens: {
+      sm: "600px",
+      md: "960px",
+      lg: "1280px",
+      xl: "1920px",
+      xxl: "2560px",
     },
   },
   plugins: [],
