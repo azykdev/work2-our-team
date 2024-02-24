@@ -48,12 +48,14 @@
 
         <!-- Social Media -->
         <div id="social" class=" align-center d-none d-sm-flex">
-          <v-btn color="grey-darken-1" icon="mdi mdi-facebook" variant="text" density="comfortable"
+          <v-btn class="text-deep-purple-lighten-4" icon="mdi mdi-facebook" variant="text" density="comfortable"
             title="Facebook"></v-btn>
-          <v-btn color="grey-darken-1" icon="mdi mdi-send" variant="text" density="comfortable" title="Telegram"></v-btn>
-          <v-btn color="grey-darken-1" icon="mdi mdi-instagram" variant="text" density="comfortable"
+          <v-btn class="text-deep-purple-lighten-4" icon="mdi mdi-send" variant="text" density="comfortable"
+            title="Telegram"></v-btn>
+          <v-btn class="text-deep-purple-lighten-4" icon="mdi mdi-instagram" variant="text" density="comfortable"
             title="Instagram"></v-btn>
-          <v-btn color="grey-darken-1" icon="mdi mdi-email" variant="text" density="comfortable" title="Email"></v-btn>
+          <v-btn class="text-deep-purple-lighten-4" icon="mdi mdi-email" variant="text" density="comfortable"
+            title="Email"></v-btn>
         </div>
 
         <v-divider :thickness="2" vertical class="mx-4 d-lg-none"></v-divider>
