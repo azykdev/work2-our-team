@@ -1,6 +1,6 @@
 <template>
   <!-- HEADER START-->
-  <header id="header" class="bg-transparent relative">
+  <header id="header" class="bg-transparent relative mt-[64px]">
     <div class=" max-w-screen-lg mx-auto h-full flex items-center px-5 ">
       <!-- Header content -->
       <div class=" d-md-flex flex-row-reverse justify-space-around align-center">
@@ -49,8 +49,9 @@
 
   <!-- PROJECTS START -->
   <section id="projects" class="bg-slate-900 min-h-screen">
-    <div class="max-w-screen-lg mx-auto px-5 py-10">
-      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Bizning
+    <div class="max-w-screen-lg mx-auto px-5">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center pt-[74px]" style="letter-spacing: 5px;">
+        Bizning
         Loyihalar</h1>
       <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -61,8 +62,9 @@
 
   <!-- ABOUT START -->
   <section id="about" class="bg-slate-950 min-h-screen">
-    <div class="max-w-screen-lg mx-auto px-5 py-10">
-      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Biz
+    <div class="max-w-screen-lg mx-auto px-5">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center pt-[74px]" style="letter-spacing: 5px;">
+        Biz
         Haqimizda</h1>
       <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -73,8 +75,9 @@
 
   <!-- NEWS START -->
   <section id="news" class="bg-slate-900 min-h-screen">
-    <div class="max-w-screen-lg mx-auto px-5 py-10">
-      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Yangiliklar
+    <div class="max-w-screen-lg mx-auto px-5">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center pt-[74px]" style="letter-spacing: 5px;">
+        Yangiliklar
       </h1>
       <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -85,8 +88,9 @@
 
   <!-- PARTNERS START -->
   <section id="partners" class="bg-slate-950 min-h-screen">
-    <div class="max-w-screen-lg mx-auto px-5 py-10">
-      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Hamkorlik
+    <div class="max-w-screen-lg mx-auto px-5">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center pt-[74px]" style="letter-spacing: 5px;">
+        Hamkorlik
       </h1>
       <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -97,8 +101,9 @@
 
   <!-- CONTACT START -->
   <section id="contact" class="bg-slate-900 min-h-screen">
-    <div class="max-w-screen-lg mx-auto px-5 py-10">
-      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Aloqa</h1>
+    <div class="max-w-screen-lg mx-auto px-5">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center pt-[74px]" style="letter-spacing: 5px;">
+        Aloqa</h1>
       <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
 
