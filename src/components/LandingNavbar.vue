@@ -1,4 +1,5 @@
 <template>
+  <!-- NAVBAR START -->
   <nav class="bg-slate-950">
     <div class="px-5 max-w-screen-lg mx-auto d-flex align-center justify-between h-[64px]">
       <!-- Logo -->
@@ -7,15 +8,12 @@
         <!-- <span class="ml-2 text-primary-50 font-bold">Our Team</span> -->
       </div>
 
-      <!-- Navigation -->
-      <div id="menu" class="d-flex align-center">
-        <!-- Navigation Links -->
-        <ul id="nav-links" class="d-none d-lg-flex align-center">
-          <!-- <li>
-            <a href="#services">aaa</a>
-          </li> -->
+      <!-- Navigation Wrapper -->
+      <div id="navigation-wrapper" class="d-flex align-center">
+
+        <ul id="nav-ul" class="d-none d-lg-flex align-center">
           <li v-for="link in menuLinks" :key="link.title">
-            <RouterLink class="text-primary-50" :to="link.to">{{ link.title }}</RouterLink>
+            <a :href="link.to" class="text-primary-50">{{ link.title }}</a>
           </li>
         </ul>
 
@@ -67,8 +65,8 @@
               density="comfortable"></v-btn>
           </template>
           <v-list class="bg-grey-darken-4 px-2">
-            <v-list-item v-for="(item, index) in menuLinks" :key="index" :value="index">
-              <RouterLink class="text-primary-50" :to="item.to">{{ item.title }}</RouterLink>
+            <v-list-item v-for="link in menuLinks" :key="link.title">
+              <a :href="link.to" class="text-primary-50">{{ link.title }}</a>
             </v-list-item>
 
             <v-list-item class="d-sm-none">
@@ -111,31 +109,31 @@ export default {
     menuLinks: [
       {
         title: "Bosh",
-        to: "/",
+        to: "#header",
       },
-      {
-        title: "Xizmatlar",
-        to: "#services",
-      },
+      // {
+      //   title: "Xizmatlar",
+      //   to: "#services",
+      // },
       {
         title: "Loyihalar",
-        to: "/",
+        to: "#projects",
       },
       {
         title: 'Biz haqimizda',
-        to: "/",
+        to: "#about",
       },
       {
         title: 'Yangiliklar',
-        to: "/",
+        to: "#news",
       },
       {
         title: 'Hamkorlik',
-        to: "/",
+        to: "#partners",
       },
       {
-        title: 'Bog\'lanish',
-        to: "/",
+        title: 'Aloqa',
+        to: "#contact",
       }
     ],
 
@@ -173,21 +171,21 @@ nav {
   margin: auto;
 }
 
-#nav-links {
+#nav-ul {
   list-style: none;
 }
 
-#nav-links li {
+#nav-ul li {
   margin-left: 20px;
 }
 
-#nav-links li a {
+#nav-ul li a {
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 14px;
 }
 
-#nav-links li a:hover {
+#nav-ul li a:hover {
   color: #7a39fc;
 }
 </style>

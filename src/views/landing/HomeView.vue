@@ -1,9 +1,9 @@
 <template>
   <!-- HEADER START-->
-  <header class="bg-transparent relative">
+  <header id="header" class="bg-transparent relative">
     <div class=" max-w-screen-lg mx-auto h-full flex items-center px-5 ">
       <!-- Header content -->
-      <div class=" d-md-flex flex-row-reverse justify-space-around align-center p-3">
+      <div class=" d-md-flex flex-row-reverse justify-space-around align-center">
         <!-- Image -->
         <div class="d-flex justify-space-around align-center md:w-1/2">
           <img style="box-shadow: 0 0 200px rgba(145, 42, 255, 0.5);" src="@/assets/images/about.jpg" alt=" logo"
@@ -31,7 +31,7 @@
     <!-- Background -->
     <div class="absolute top-0 left-0 w-full h-full bg-slate-950 -z-10"></div>
     <!-- Vanta -->
-    <v-vanta ref="vanta" vantaId="vanta-bg" effect="net" :options="options"></v-vanta>
+    <!-- <v-vanta ref="vanta" vantaId="vanta-bg" effect="net" :options="options"></v-vanta> -->
   </header>
   <!-- HEADER END -->
 
@@ -46,6 +46,65 @@
     </div>
   </section>
   <!-- SERVICES END -->
+
+  <!-- PROJECTS START -->
+  <section id="projects" class="bg-slate-900 min-h-screen">
+    <div class="max-w-screen-lg mx-auto px-5 py-10">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Bizning
+        Loyihalar</h1>
+      <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+    </div>
+  </section>
+  <!-- PROJECTS END -->
+
+  <!-- ABOUT START -->
+  <section id="about" class="bg-slate-950 min-h-screen">
+    <div class="max-w-screen-lg mx-auto px-5 py-10">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Biz
+        Haqimizda</h1>
+      <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+    </div>
+  </section>
+  <!-- ABOUT END -->
+
+  <!-- NEWS START -->
+  <section id="news" class="bg-slate-900 min-h-screen">
+    <div class="max-w-screen-lg mx-auto px-5 py-10">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Yangiliklar
+      </h1>
+      <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+    </div>
+  </section>
+  <!-- NEWS END -->
+
+  <!-- PARTNERS START -->
+  <section id="partners" class="bg-slate-950 min-h-screen">
+    <div class="max-w-screen-lg mx-auto px-5 py-10">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Hamkorlik
+      </h1>
+      <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+    </div>
+  </section>
+  <!-- PARTNERS END -->
+
+  <!-- CONTACT START -->
+  <section id="contact" class="bg-slate-900 min-h-screen">
+    <div class="max-w-screen-lg mx-auto px-5 py-10">
+      <h1 class="font-semibold text-slate-100 text-xl leading-tight  text-center" style="letter-spacing: 5px;">Aloqa</h1>
+      <p class="text-slate-500 text-md mt-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+    </div>
+  </section>
+  <!-- CONTACT END -->
 </template>
 
 <script>

@@ -40,57 +40,53 @@
             </div>
           </v-col>
           <v-col cols="12" sm="6" lg="2">
-            <h3 class="text-xl text-slate-200 font-semibold mb-3 border-b-2 pb-1">Bizning xizmatlar</h3>
+            <h3 class="text-xl text-slate-200 font-semibold mb-3 border-b-[1px] border-slate-600 pb-1">Bizning xizmatlar
+            </h3>
 
             <ul>
-              <li><a href="#"
-                  class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">StartUp
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">StartUp
                   yechimlari</a>
               </li>
-              <li><a href="#"
-                  class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Veb-ishlab
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Veb-ishlab
                   chiqish</a>
               </li>
-              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Tarmoq
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Tarmoq
                   xizmatlari</a>
               </li>
-              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">SEO
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">SEO
                   optimallashtirish</a>
               </li>
-              <li><a href="#"
-                  class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Telegram
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Telegram
                   bot</a></li>
-              <li><a href="#"
-                  class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Ilovalar
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Ilovalar
                   ishlab
                   chiqish</a>
               </li>
             </ul>
           </v-col>
           <v-col cols="12" sm="6" lg="2">
-            <h3 class="text-xl text-slate-200 font-semibold mb-3 border-b-2 pb-1">Foydali havolalar </h3>
+            <h3 class="text-xl text-slate-200 font-semibold mb-3 border-b-[1px] border-slate-600 pb-1">Foydali havolalar
+            </h3>
 
             <ul>
-              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Biz
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Biz
                   haqimizda </a>
               </li>
-              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Biz
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Biz
                   bilan bog'lanish </a>
               </li>
-              <li><a href="#"
-                  class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Loyihalar
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Loyihalar
                   xizmatlari</a>
               </li>
-              <li><a href="#"
-                  class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Yangiliklar</a>
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Yangiliklar</a>
               </li>
-              <li><a href="#"
-                  class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 border-slate-700">Hamkorlik
+              <li><a href="#" class="text-slate-50 hover:text-blue-400 text-sm  inline-block mb-2 ">Hamkorlik
                   bot</a></li>
             </ul>
           </v-col>
           <v-col cols="12" sm="6" lg="4">
-            <h3 class="text-xl text-slate-200 font-semibold mb-3 border-b-2 pb-1">Aloqa ma'lumotlari </h3>
+            <h3 class="text-xl text-slate-200 font-semibold mb-3 border-b-[1px] border-slate-600 pb-1">Aloqa ma'lumotlari
+            </h3>
 
             <ul>
               <li class="flex items-start mb-4">
